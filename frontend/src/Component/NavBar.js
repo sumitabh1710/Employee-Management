@@ -3,16 +3,25 @@ import "../App.css";
 
 const NavBar = ({ setAddEmployee }) => {
   const handleClick = (e) => {
-    if (e.target.id === "Add Employee") {
+    if (e.id == 3) {
       setAddEmployee(true);
     }
   };
 
   let optionList = [];
-  ["LogIn", "SignIn", "Add Employee"].forEach((each) => {
+  [
+    { id: 1, name: "LogIn" },
+    { id: 2, name: "SignIn" },
+    { id: 3, name: "Add Employee" },
+  ].forEach((each) => {
     optionList.push(
-      <div className="navBarOptions" id={each} onClick={(e) => handleClick(e)}>
-        {each}
+      <div
+        className="navBarOptions"
+        id={each.id}
+        key={each.id}
+        onClick={() => handleClick(each)}
+      >
+        {each.name}
       </div>
     );
   });
