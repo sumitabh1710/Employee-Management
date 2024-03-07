@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.pageContent {
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.navBar {
+  width: 20%;
+  height: 100vh;
+  background-color: #7ed5ae;
+  border-right: 1px solid #423e28;
+}
+
+.topBar {
+  height: 60px;
+  background-color: #7ed5ae;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.refresh {
+  width: 80%;
+  margin: 2%;
+  display: flex;
+  justify-content: end;
+}
+
+.refreshButton {
+  background-color: #7ed5ae;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  color: #423e28;
+}
+
+.refreshButton:hover {
+  background-color: #63b995;
+}
+
+.homeTable {
+  width: 80%;
+  text-align: left;
+}
+
+.popUp {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(1, 1, 1, 0.3);
+}
+
+.popUpContainer {
+  width: 500px;
+  min-height: 300px;
+  border-radius: 6px;
+  background-color: aliceblue;
+}
+
+th {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #423e28;
+  color: white;
+}
+
+td {
+  padding: 5px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  animation: 1.5s linear infinite spin;
+}
+
+.navBarOptions {
+  border-bottom: 1px solid #423e28;
+  margin: 5%;
+  padding: 5%;
+  font-weight: 500;
+  font-size: large;
+  font-family: monospace;
+  color: #423e28;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.navBarTitle {
+  font-family: monospace;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  color: #423e28;
+}
+
+.navBarOptions:hover {
+  background-color: #63b995;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.addEmployee {
+  padding: 5%;
+}
+
+.addEmployeeTitle {
+  font-family: monospace;
+  font-size: xx-large;
+  font-weight: 700;
+  color: #423e28;
+  margin: 0;
+}
+
+.addEmployeeForm {
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addEmployeeType {
+  width: 150px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formCommon {
+  margin-top: 15px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
